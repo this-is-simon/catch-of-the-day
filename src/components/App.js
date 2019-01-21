@@ -12,10 +12,21 @@ class App extends React.Component {
     order: {}
   };
 
+  componentDidMount() {
+    this.ref = base.syncState(`${this.props.match.params.storeId}/fishes`, {
+      context: this,
+      state: 'fishes'
+    });
+  }
+
+  componentWillUnmount() {
+    base.removeBinding(this.ref);
+  }
+
   addFish = fish => {
     const fishes = { ...this.state.fishes };
     fishes[`fish${Date.now()}`] = fish;
-    this.setState({ fishes })
+    this.setState({ fishes });
   };
 
   loadSampleFishes = () => {
