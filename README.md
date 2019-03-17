@@ -5,5 +5,7 @@ The app is designed to allow a user to log into their account, add and remove fr
 
 The app allowed me to practise React, Firebase and authentication as well as some CSS animation.
 
+Click on the image below for my YouTube demo of the app:
+
 [![Catch of the Day](https://imgur.com/O2r2Q3J.png
 )](https://youtu.be/8ol9j6zLeKQ "Catch of the Day: A ReactJS app")
